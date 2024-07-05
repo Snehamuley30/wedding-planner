@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The wedding Planner</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet"href="('https://fonts.google.com/share?selection.family=Allura')">
+<script>
+    let menu = document.querySelector(".menu-bar");
+    let head = document.querySelector(".head .navbar");
+    
+    menu.onclick = () => {
+        head.classList.toggle("active");
+    };
+    
+    window.onscroll = () => {
+        head.classList.remove('active');
+        if (window.scrollY > 60) {
+            menu.classList.add('active');
+        } else {
+            menu.classList.remove('active');
+        }
+    };
+    
+    </script>
+</head>
+<body>
+    |<header class="head">
+        <div class="logo">
+            <a href="logo.png"></a>
+            <span>Shaadi Saga</span>
+        </div>
+        <nav class="navbar">
+           <a href="#" class="active">Home</a>
+            <a href ="Services">Services</a>
+            <a href ="vendor">Vendor</a>
+            <a href ="venue">Venue</a>
+            <a href ="Invites">Invites</a>
+            <a href ="Contact">Contact</a>
+        </nav>
+        <div id="menu-bar"><i class="fas-fa-bars"></i></div>
+    </header>
+    <section id ="Home" class="Home">
+        <form action="#">
+            <div class="Search-box">
+                <h1>Turning Dreams Into Reality</h1>
+                <p>"Making your wedding day extraordinary, with attention to every detail and a focus on creating lasting memories." </p>
+                <select type = 'text' class="search-field">
+                    <option disabled selected>Select Vendor Type</option>
+                    <option value="wedding venue">Wedding Venue</option>
+                    <option value="Bridal makeup">Bridal Makeup</option>
+                    <option value="Decoration">Decoration</option>
+                    <option value="Caterer">Caterer</option>
+                    <option value="other">Other</option>
+                </select>      
+                <select type = 'text' class="search-field">
+                    <option disabled selected>City</option>
+                    <option value="Bhopal">Bhopal</option>
+                    <option value="Sanchi">Sanchi</option>
+                    <option value="Indore">Indore</option>
+                    <option value="Gwalior">Gwalior</option>
+                    <option value="other">Other</option>
+                    </select>
+                    <button class="btn">Search</button>
+                    
+                 </div>
+                 
+
+        </form>
+    </section>
+    <section class="Services" id=""Services>
+        <div class="title">
+            <h1><span>S</span>ervices</h1>
+        </div>
+        <div class="services-row">
+            <div class="services-col">
+                <i class="fas fa-book-open"></i>
+                <h2>Invitation</h2>
+                <p>Your wedding is a once-in-a-lifetime event, and your invitations should be as unique and special as the love you share.</p>                
+            </div>
+            <div class="services-col">
+                <i class="fas fa-brush"></i>
+                <h2>Beauty & Makeup</h2>
+                <p>Your wedding day is one of the most important days of your life, and you deserve to look and feel absolutely stunning.</p>
+                </div>
+            <div class="services-col">
+                <i class="fas fa-gem"></i>
+                <h2>Wedding Decoration</h2>
+                <p>Transforming ordinary venues into extraordinary spaces, creating the perfect backdrop for your love story.</p>                
+            </div>
+            <div class="services-col">
+                <i class="fas fa-music"></i>
+                <h2>Music & Dj</h2>
+                <p>Bringing Your Wedding Reception to Life with Exceptional DJ Services and a Tailored Music Experience.</p>                
+            </div>
+            <div class="services-col">
+                <i class="fas fa-camera"></i>
+                <h2>Photography & Video</h2>
+                <p>Documenting the Joy, Love, and Emotions of Your Wedding Day with Professional Photography.</p>                
+            </div>
+            <div class="services-col">
+                <i class="fas fa-utensils"></i>
+                <h2>Catering</h2>
+                <p>Providing Comprehensive Catering Solutions That Turn Your Wedding Celebration into a Culinary Delight</p>                
+            </div>
+        </div>
+        
+    </section>
+    <section class="vendor" id="vendor">
+        <div class="title">
+            <h1><span>F</span>eatured <span>V</span>endor</h1>
+        </div>
+        <div class="vendor-list">
+            <div class="vendor-row">
+                <div class="rate">4.5&nbsp;<i class = "fas fa-star" aria-hidden="true"></i></div>
+            <img src="img1.jpeg" alt="img">
+            <h2>House of beauty by Ayushi </h2>
+            <p>Bridal Makeup</p>
+            <h3>Rs.15,000 onwards</h3>
+            </div>
+            <div class="vendor-row">
+                <div class="rate">4.3&nbsp;<i class = "fas fa-star" aria-hidden="true"></i></div>
+            <img src="img2.jpg" alt="img">
+            <h2>Decor Ville</h2>
+            <p>Wedding Decorator</p>
+            <h3>Rs 45,000-2,50,000</h3>
+        </div>
+        <div class="vendor-row">
+            <div class="rate">4.6&nbsp;<i class = "fas fa-star" aria-hidden="true"></i></div>
+        <img src="img3.jpeg" alt="img">
+        <h2>Avyukt food</h2>
+        <p>Caterer</p>
+        <h3>Rs 75,000 onwards</h3>
+        </div>
+        
+            
+        <div class="vendor-row">
+            <div class="rate">4.3&nbsp;<i class = "fas fa-star" aria-hidden="true"></i></div>
+        <img src="img4.webp" alt="img">
+        <h2>Sky Wedding Planner</h2>
+        <p>Wedding Planner</p>
+        <h3>Rs 80,000-4,00,000</h3>
+        </div>
+    </div>
+    </section>
+    <section class="venue" id="venue">
+        <div class="title">
+            <h1><span>V</span>enues</h1>
+        </div>
+        <div class="venue-list">
+            <div class="venue-box">
+                <img src="v1 (1).jpg">
+                <div class="venue-info">
+                    <h2>Vidisha</h2>
+                    <p>Utopia Resort ,Sanchi</p>
+                    <button class="btn">More Info</button>
+                </div>
+            </div>
+            <div class="venue-box">
+                <img src="v1 (2).jpg">
+                <div class="venue-info">
+                    <h2>Bhopal</h2>
+                    <p>Noor Us Sahab Palace,Bhopal</p>
+                    <button class="btn">More Info</button>
+                </div>
+            </div>
+            <div class="venue-box">
+                <img src="v1 (5).jpg">
+                <div class="venue-info">
+                    <h2>Indore</h2>
+                    <p>Ashok Raj Resort and Frams</p>
+                    <button class="btn">More Info</button>
+                </div>
+            </div>
+            <div class="venue-box">
+                <img src="v1 (4).jpg">
+                <div class="venue-info">
+                    <h2>Khajuraho</h2>
+                    <p>Radisson Hotel Jass</p>
+                    <button class="btn">More Info</button>
+                </div>
+            </div>
+            <div class="venue-box">
+                <img src="v1 (3).jpg">
+                <div class="venue-info">
+                    <h2>Orchha</h2>
+                    <p>Amar Mahal </p>
+                    <button class="btn">More Info</button>
+                </div>
+            </div>
+            <div class="venue-box">
+                <img src="v1 (6).jpg">
+                <div class="venue-info">
+                    <h2>Gwalior</h2>
+                    <p>Neemrana Hotels </p>
+                    <button class="btn">More Info</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="invite" id="invite">
+        <div class="title">
+            <h1>Card<span>Design</span></h1>
+            <p>Choose the best card design</p>
+        </div>
+        <div class="invitation-row">
+            <div class="invitation-box">
+                <img src="c1.jpg" alt="Card Design 1">
+            </div>
+            <div class="invitation-box">
+                <img src="c2.webp" alt="Card Design 2">
+            </div>
+            <div class="invitation-box">
+                <img src="c3.jpg" alt="Card Design 3">
+            </div>
+            <div class="invitation-box">
+                <img src="c4.jpg" alt="Card Design 4">
+            </div>
+            <div class="invitation-box">
+                <img src="c5.webp" alt="Card Design 5">
+            </div>
+            <div class="invitation-box">
+                <img src="c6.jpg" alt="Card Design 6">
+            </div>
+            <div class="invitation-box">
+                <img src="c7.jpg" alt="Card Design 7">
+            </div>
+            <div class="invitation-box">
+                <img src="c8.webp" alt="Card Design 8">
+            </div>
+            <div class="invitation-box">
+                <img src="c9.png" alt="Card Design 8">
+            </div>
+            
+        </div>
+    </section>
+   <footer class  ="contact">
+    <div class="container">
+        <div class="f-cont">
+            <h2>Shaadi Saga - Your Personal Wedding Planner</h2>
+            <p>Plan your wedding with Us Shaadi Saga is an Indian Wedding planner Website</p>
+        <div>
+        <button class="btn">Register as a Vendor</button>
+    </div>
+    <div class="social">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-pinterest"></i>
+        <i class="fab fa-linkedin"></i>
+        </div>
+        </div>
+        <div class="f-cont">
+            <h2>Our Location</h2>
+            <a href="#"><i class="fas fa-angle-right"></i>Bhopal</a>
+                <a href="#"><i class="fas fa-angle-right"></i>Vidisha</a>
+                <a href="#"><i class="fas fa-angle-right"></i>Indore</a>
+                <a href="#" ><i class=" fas fa-angle-right "></i>Gwalior</a>
+                    
+        </div>
+        <div class="f-cont">
+            <h2>Our Newsletter</h2>
+            <p>Subscribe for latest updates</p>
+            <input type="text" placeholder="Enter your Email">
+            <button class="btn">Subscribe</button>
+        </div>
+   </footer>
+   <div class="copyright">
+    <p>Copyright &copy;2024 Shaadi Saga ,All rights Reserved </p>
+   </div>
+   
+
+</body>
+
+</html>
